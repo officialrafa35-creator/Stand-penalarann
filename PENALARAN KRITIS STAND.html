@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stand Penalaran Kritis - X TKI 2</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #9ad6ff 0%, #3da5ff 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ======== HEADER / BANNER ======== */
+  .header {
+    width: 100%;
+    height: 230px;
+    background: url('https://files.catbox.moe/1ngblp.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  /* ======== LOGO SEKOLAH ======== */
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-top: -55px;
+    z-index: 2;
+  }
+
+  /* ======== TEKS SELAMAT DATANG ======== */
+  .welcome {
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px; /* besar dan jelas */
+    margin-top: 18px;
+    line-height: 1.4;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    letter-spacing: 1px;
+  }
+
+  /* ======== KARTU QR ======== */
+  .qr-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .qr-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .qr-card img:hover {
+    transform: scale(1.03);
+  }
+
+  .qr-card p {
+    font-weight: 700;
+    color: #000;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  /* ======== TOMBOL ======== */
+  .btn {
+    display: block;
+    width: 300px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 0;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  /* ======== WATERMARK ======== */
+  .watermark {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+
+  @media (max-width: 600px) {
+    .header { height: 180px; }
+    .logo { width: 120px; margin-top: -45px; }
+    .welcome { font-size: 24px; }
+    .qr-card, .btn { width: 85%; }
+    .watermark { font-size: 13px; margin-top: 30px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- BAGIAN ATAS DENGAN BANNER -->
+  <div class="header"></div>
+
+  <!-- LOGO SEKOLAH -->
+  <img src="https://files.catbox.moe/3eey3b.png" alt="Logo Sekolah" class="logo">
+
+  <!-- TEKS SELAMAT DATANG -->
+  <p class="welcome">
+    SELAMAT DATANG DI STAND <br> PENALARAN KRITIS
+  </p>
+
+  <!-- KARTU QR -->
+  <div class="qr-card">
+    <img src="https://files.catbox.moe/k77icw.png" alt="QR Code">
+    <p>SCAN DI SINI</p>
+  </div>
+
+  <!-- TOMBOL MAIN -->
+  <a href="https://wordwall.net/resource/99843120" target="_blank" class="btn">
+    KLIK DI SINI UNTUK BERMAIN
+  </a>
+
+  <!-- WATERMARK -->
+  <div class="watermark">
+    Created by siswa kelas X TKI 2
+  </div>
+
+</body>
+</html>
